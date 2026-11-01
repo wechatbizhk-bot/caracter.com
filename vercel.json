@@ -1,6 +1,213 @@
 {
   "cleanUrls": true,
   "trailingSlash": false,
+  "redirects": [
+    {
+      "source": "/solutions",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/solutions/:path*",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/studio",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/studio/",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/studio/:path*",
+      "destination": "/how-it-works.html",
+      "permanent": true
+    },
+    {
+      "source": "/supply-chain",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/supply-chain/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/supply-chain/:path*",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/cases",
+      "destination": "/explore/furi-monster.html",
+      "permanent": true
+    },
+    {
+      "source": "/cases/",
+      "destination": "/explore/furi-monster.html",
+      "permanent": true
+    },
+    {
+      "source": "/cases/:path*",
+      "destination": "/explore/furi-monster.html",
+      "permanent": true
+    },
+    {
+      "source": "/campaigns",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/campaigns/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/campaigns/:path*",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/thailand-pilot",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/thailand-pilot/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/thailand-pilot/:path*",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/dashboard/:path*",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/login",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/login/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/sign-in",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/sign-in/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/signin",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/signin/",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner",
+      "destination": "/partner/become-a-partner.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/",
+      "destination": "/partner/become-a-partner.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/index",
+      "destination": "/partner/become-a-partner.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/index.html",
+      "destination": "/partner/become-a-partner.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/creators",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/creators.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/suppliers",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/suppliers.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/submit-ip",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/partner/submit-ip.html",
+      "destination": "/contact.html",
+      "permanent": true
+    },
+    {
+      "source": "/explore",
+      "destination": "/explore/furi-monster.html",
+      "permanent": true
+    },
+    {
+      "source": "/explore/",
+      "destination": "/explore/furi-monster.html",
+      "permanent": true
+    },
+    {
+      "source": "/explore/index",
+      "destination": "/explore/furi-monster.html",
+      "permanent": true
+    },
+    {
+      "source": "/explore/index.html",
+      "destination": "/explore/furi-monster.html",
+      "permanent": true
+    }
+  ],
   "rewrites": [
     {
       "source": "/en/furi",

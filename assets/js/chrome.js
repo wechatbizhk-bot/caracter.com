@@ -21,23 +21,21 @@
   /* Primary navigation. Every href here must exist — tools/check.js verifies it.
    * NAV_BAR = shown in the desktop header; NAV_MORE = drawer/MENU only (keeps the
    * top bar from colliding with langs / Translate / CTA). */
+  /* Phase 0 honest nav (strict plan §6): Explore / How it works / Play.
+   * Studio, Solutions, Supply-chain, Cases culled from primary nav — redirects
+   * in vercel.json send old URLs to honest pages. No Login / dashboard /
+   * thailand-pilot. Partner marketplace browser demoted; CTA stays become-a-partner. */
   var NAV_BAR = [
-    { page: 'explore', href: 'explore/index.html', key: 'nav.explore', tier: 'core' },
-    { page: 'studio', href: 'studio/index.html', key: 'nav.studio', tier: 'core' },
-    { page: 'solutions', href: 'solutions/index.html', key: 'nav.solutions', tier: 'core' },
-    { page: 'supply', href: 'supply-chain/index.html', key: 'nav.supply', tier: 'mid' },
-    { page: 'how', href: 'how-it-works.html', key: 'nav.how', tier: 'mid' }
+    { page: 'explore', href: 'explore/furi-monster.html', key: 'nav.explore', tier: 'core' },
+    { page: 'how', href: 'how-it-works.html', key: 'nav.how', tier: 'core' },
+    { page: 'play', href: 'play.html', key: 'nav.play', tier: 'mid' }
   ];
-  var NAV_MORE = [
-    { page: 'cases', href: 'cases/index.html', key: 'nav.cases' },
-    { page: 'play', href: 'play.html', key: 'nav.play' }
-  ];
+  var NAV_MORE = [];
   var NAV = NAV_BAR.concat(NAV_MORE);
   var UTIL = [
     { page: 'why', href: 'why-caracter.html', key: 'nav.why' },
     { page: 'about', href: 'about.html', key: 'nav.about' },
     { page: 'trust', href: 'trust.html', key: 'nav.trust' },
-    { page: 'partner', href: 'partner/index.html', key: 'nav.partner' },
     { page: 'contact', href: 'contact.html', key: 'nav.contact' }
   ];
 
@@ -134,9 +132,10 @@
      * times — the first version pointed every entry at key 'nav.solutions' and
      * the footer read "Solutions / Solutions / Solutions…" on every page. */
     const groups = (FM.data && FM.data.groups) || [];
+    /* Group names stay for orientation; link to Contact (interest), not fake /solutions/* pages. */
     function groupsCol() {
       return '<div class="fcol"><h3>' + esc(t('footer.groups')) + '</h3><ul>' +
-        groups.map(g => '<li><a href="' + p + 'solutions/' + esc(g.slug) + '.html">' +
+        groups.map(g => '<li><a href="' + p + 'contact.html">' +
           esc(FM.i18n ? FM.i18n.pick(g.name) : g.slug) + '</a></li>').join('') +
         '</ul></div>';
     }
